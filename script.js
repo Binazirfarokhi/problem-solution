@@ -202,3 +202,22 @@
 //     }
 // }
 // oddishEvenish(14)
+// create a function accept two days and turn the days between all these two days
+function between(num1,num2){
+
+
+ let newnumber = [];
+ 
+for (let i = num1+1;i<num2 ; i++) {
+
+       
+         newnumber.push(i)
+    
+
+
+    
+}
+ 
+   console.log(newnumber)
+}
+between(13,17)
