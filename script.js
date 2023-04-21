@@ -179,26 +179,26 @@
 
 
 // oddish or evenish (it is a number that the sum of all digits is odd )
-function oddishEvenish(num){
-    let sum = 0;
+// function oddishEvenish(num){
+//     let sum = 0;
   
 
     
-    if (num>=10){ 
-         let snum = num.toString();
-        for (let i = 0; i < snum.length-1; i++) {
-            // i bayad barabar bashe ba tool adad! vase hamine k -1 mishe too halghe
+//     if (num>=10){ 
+//          let snum = num.toString();
+//         for (let i = 0; i < snum.length-1; i++) {
+//             // i bayad barabar bashe ba tool adad! vase hamine k -1 mishe too halghe
          
-            sum += parseInt(snum[i])+ parseInt(snum[i+1])
+//             sum += parseInt(snum[i])+ parseInt(snum[i+1])
 
             
-        }
-        console.log(sum)
-        if (sum % 2 == 0){
-            alert("num is oddish")
-        }else {
-            alert ('evenish')
-        }
-    }
-}
-oddishEvenish(14)
+//         }
+//         console.log(sum)
+//         if (sum % 2 == 0){
+//             alert("num is oddish")
+//         }else {
+//             alert ('evenish')
+//         }
+//     }
+// }
+// oddishEvenish(14)
