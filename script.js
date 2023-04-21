@@ -151,21 +151,54 @@
 // create a function to check if a word is palindrome
 
 
-function palindrome(word){
-    let neword= '';
-    for (let i  = 0; i  < word.length; i ++) {
-   for ( let j = word.length-1 ; j>=0 ; j--) {
-        if (word[i] == word[j]){
-           neword += word[i]; 
-        }else{
-            // alert ('false')
-        }
+// function palindrome(word){
+//     let neword= '';
+
+
+
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] == word[word.length-i-1]){
+//            neword += word[i]; 
+//         }
+//         if(neword == word ){
+//             alert('true')
+
+//         }
+    
+//   }
+        
+
+
+   
+        
+    
+//      console.log(neword)
+// }
+//    const show = document.getElementById('show')
+// show.innerHTML = palindrome("apple");
+
+
+// oddish or evenish (it is a number that the sum of all digits is odd )
+function oddishEvenish(num){
+    let sum = 0;
+  
 
     
-   }
-        
+    if (num>=10){ 
+         let snum = num.toString();
+        for (let i = 0; i < snum.length-1; i++) {
+            // i bayad barabar bashe ba tool adad! vase hamine k -1 mishe too halghe
+         
+            sum += parseInt(snum[i])+ parseInt(snum[i+1])
+
+            
+        }
+        console.log(sum)
+        if (sum % 2 == 0){
+            alert("num is oddish")
+        }else {
+            alert ('evenish')
+        }
     }
-     console.log(neword)
 }
-   const show = document.getElementById('show')
-show.innerHTML = palindrome("madam");
+oddishEvenish(14)
